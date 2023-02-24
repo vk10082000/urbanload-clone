@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <style>
@@ -13,10 +14,11 @@
         padding: 0px;
     }
 
-    * {
+    *{
         box-sizing: border-box;
     }
-/* Nav 1 *********************************************************************************** */
+
+    /* Nav 1 *********************************************************************************** */
     h4 {
         margin-top: 0px;
         width: 100%;
@@ -31,11 +33,12 @@
         font-size: 13px;
 
     }
-/* Nav 2 **************************************************************************************** */
+
+    /* Nav 2 **************************************************************************************** */
     .nav_2 {
 
         /* background-color: blueviolet; */
-        width: 80%;
+        width: 100%;
         margin: auto;
         height: 22px;
         align-items: center;
@@ -43,6 +46,8 @@
         justify-content: space-between;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
         padding-bottom: 12px;
+        padding-left: 10%;
+        padding-right: 10%;
 
 
     }
@@ -54,39 +59,193 @@
         padding: 10px 10px;
 
     }
-    .nav_2 a{
+
+    .nav_2 a {
         text-decoration: none;
+
     }
-.nav_2 li{
-    float: left;
-    padding: 12px 13px;
-    list-style: none;
-}
-   
+
+    .nav_2 li a:hover {
+        color: red;
+    }
+
+    .nav_2 li {
+        float: left;
+        padding: 12px 13px;
+        list-style: none;
+    }
+
     .nav_2 li img {
         width: 28px;
         height: 28px;
 
     }
-    .nav_2 a{
+
+    .nav_2 li img:hover {
+        color: red;
+    }
+
+    .nav_2 a {
         font-size: 14px;
     }
+
     /* Nav 3 *************************************************************************************** */
+    .nav_3 {
+        width: 100%;
+        margin: auto;
+        height: 70px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        padding-bottom: 12px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+
+
+    }
+
+    .nav_3 li img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    .nav_3 a {
+        text-decoration: none;
+    }
+
+    .nav_3 li {
+        float: left;
+        padding: 12px 13px;
+        list-style: none;
+    }
+
+    #logo {
+        width: 75px;
+        height: 68px;
+        margin-top: 11px;
+        margin-left: -35px;
+    }
+
+    ul>div {
+        border: 1px solid black;
+        width: 619px;
+        height: 40px;
+        margin: -33px;
+        margin-top: -12px;
+        border-radius: 5px;
+    }
+
+    .icon_search {
+        font-size: 25px;
+
+    }
+
+    .search>input {
+        background: transparent;
+        border: 0px;
+        outline: 0px;
+        width: 580px;
+        font-size: 15px;
+        padding-left: 9px;
+        padding-top: 12px;
+    }
+
+    .nav_3 ul:nth-child(3) {
+        margin: 9px;
+        margin-top: 19px;
+    }
+
+    /* nav 4 ************************************************************************ */
+    .nav_4 {
+        width: 100%;
+        height: 45px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+    }
+
+
+    /* bgafjkhgfloihj************************************************************ */
+
+    .nav_4>ul {
+        width: 86%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 69px;
+        position: relative;
+    }
+
+    .nav_4>ul>li {
+        padding: 15px 9px;
+        list-style: none;
+    }
+
+    .nav_4>ul>li>a {
+        text-decoration: none;
+    }
+    .megamenu{
+        width: 86%;
+        position: absolute;
+        top: 100%;
+       left: 10%;
+        opacity: 0;
+        margin-top: 0px;
+        visibility: hidden;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    .nav_4>ul>li:hover .megamenu{
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+
+    }
+    .megamenu_items ul li{
+        list-style: none;
+        padding: 5px 0px;
+        
+    }
+    .megamenu_items h3{
+        font-size: 16px;
+    padding-left: 41px;
+    }
+    .megamenu_items h3:hover{
+        color: red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .megamenu_items ul li:hover{
+        color: red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .megamenu_items ul li{
+        font-size: 13px;
+    }
 </style>
 
 <body>
     <!-- nav bar ************************************************************************************ -->
     <div>
-        <h4> Spring into Sale | Up to 60% off | Now Live | <span style="color: red;">Click to shop!</span></h4>
+        <h4> Spring into Sale | Up to 60% off | Now Live | <span style="color: red; cursor: pointer;">Click to
+                shop!</span></h4>
     </div>
     <div class="nav_2">
         <ul>
-            <li> <img src="https://img.icons8.com/ios/2x/help.png" alt=""> </li>
-            <li style="padding-top: 17px;padding-left:-10px;"><a href="" >Help</a></li>
-            <li> <img 
-                    src="https://img.icons8.com/external-photo3ideastudio-solid-photo3ideastudio/2x/external-order-tracking-internet-of-things-photo3ideastudio-solid-photo3ideastudio.png"
-                    alt=""></li>
-            <li style="padding-top: 17px; "><a href="">Track Order</a></li>
+            <li> <a href=""><img style="cursor: pointer;" src="https://img.icons8.com/ios/2x/help.png" alt=""> </a>
+            </li>
+            <li style="padding-top: 17px;margin-left: -20px;"><a href="" style=" cursor: pointer;">Help</a></li>
+            <li> <a href=""><img
+                        src="https://img.icons8.com/external-photo3ideastudio-solid-photo3ideastudio/2x/external-order-tracking-internet-of-things-photo3ideastudio-solid-photo3ideastudio.png"
+                        alt=""> </a> </li>
+            <li style="padding-top: 17px; margin-left: -20px; "><a href="">Track Order</a></li>
         </ul>
         <ul>
             <li><a href="">Stores</a></li>
@@ -98,16 +257,423 @@
     <div class="nav_3">
         <ul>
             <li>
-            
+                <a href=""> <img id="logo" src="./Copy of Orange White Simple Furniture Logo.png" alt=""></a>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        </ul>
+        <ul>
+            <div class="search">
+
+                <input type="text" name="Search" placeholder="Search">
+                <a href=""><i class="fa fa-search icon_search "></i></a>
+            </div>
+        </ul>
+        <ul>
+            <li><a href=""> <img
+                        src="https://img.icons8.com/external-photo3ideastudio-solid-photo3ideastudio/2x/external-order-tracking-internet-of-things-photo3ideastudio-solid-photo3ideastudio.png"
+                        alt=""></a></li>
+            <li><a href=""> <img src="https://img.icons8.com/fluency/512/user-male-circle.png" alt=""></a></li>
+            <li><a href=""> <img src="https://img.icons8.com/pastel-glyph/2x/hearts.png" alt=""></a></li>
+            <li><a href=""> <img src="https://img.icons8.com/pastel-glyph/2x/shopping-cart.png" alt=""></a></li>
+
         </ul>
 
     </div>
+    <!-- Nav_4 ********************************************************************************************** -->
+    <div class="nav_4">
+        <ul>
+            <li><a herf="#">Deal Zone</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Top Deals</h3>
+                        <ul>
+                            <li>Daily Deals</li>
+                            <li>Weekday Special Deals</li>
+                            <li>Stunning Deals</li>
+                            <li>Clearance Sale</li>
+                            <li>All Products on Sale</li>
+                            <li>All Decor on Sale</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </li>
+
+            <li><a herf="#"></a> Safas & Recliners</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Sofas</h3>
+                        <ul>
+                            <li>All Sofas</li>
+                            <li>Fabric Sofa Sets</li>
+                            <li>Wooden Sofa Sets</li>
+                            <li> Leather Sofa Sets</li>
+                            <li> Leatherette Sofa Sets</li>
+                            <li> L Shaped Sofa Sets</li>
+                            <li> Diwans</li>
+                            <li>Loveseats</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Recliners</h3>
+                        <ul>
+                            <li>All Recliners</li>
+                            <li>1 Seater Recliners</li>
+                            <li>2 Seater Recliners</li>
+                            <li>3 Seater Recliners</li>
+                            <li>Fabric Recliners</li>
+                            <li>Leatherette Recliners</li>
+                            <li> Motorized Recliners</li>
+                            <li>Manual Recliners  </li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Sofa Bed</h3>
+                        <ul>
+                            <li>All Sofa Beds</li>
+                            <li>Fabric Sofa Beds</li>
+                            <li>Wooden Sofa Beds</li>
+                            <li>Futons</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3> Seating & Chairs</h3>
+                        <ul>
+                            <li>Lounge Chairs</li>
+                            <li>Accent Chairs</li>
+                            <li>Ottomans & Stools</li>
+                            <li>Bean Bags</li>
+                            <li>Benches</li>
+                            <li>Bar Stools</li>
+                            <li>Rocking Chairs</li>
+                            <li>Gaming Chairs</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Living</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Seating & Chairs</h3>
+                        <ul>
+                            <li>Lounge Chairs</li>
+                            <li>Accent Chairs</li>
+                            <li>Recliners</li>
+                            <li>Sofa Cum Bed</li>
+                            <li>Ottomans & Stools</li>
+                            <li>Bean Bags</li>
+                            <li>Benches</li>
+                            <li>Bar Stools</li>
+                            <li>Rocking Chairs</li>
+                            <li>Gaming Chairs</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Tables</h3>
+                        <ul>
+                            <li>Coffee Tables</li>
+                            <li>Side & End Tables</li>
+                            <li>Console Table</li>
+                            <li>Nested Tables</li>
+                            <li>Coffee Table Sets</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Living Storage</h3>
+                        <ul><li>TV Units</li>
+                        <li>Bookshelves</li>
+                        <li>Shoe Racks</li>
+                        <li>Prayer Units</li>
+                        <li>Showcases</li>
+                        <li>Wall Shelves</li>
+                        <li>Entryway & Foyer</li>
+                        <li>Corner Storage</li>
+                        <li>Room Divider</li>
+                        <li>Living Room Sets</li></ul>
+                    </div>
+                 </div>
+            </li>
+            <li><a herf="#"></a>Bedroom & Mattresses</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Beds</h3>
+                        <ul>
+                            <li>All Beds</li>
+                            <li>Beds with Storage</li>
+                            <li>Beds without Storage</li>
+                            <li>King Size Beds</li>
+                            <li>Queen Size Beds</li>
+                            <li>Single Beds</li>
+                            <li>Double Beds</li>
+                            <li>Bed-Mattress Sets</li>
+                            <li>Upholstered Beds</li>
+                            <li>Trundle Beds</li>
+                        </ul>
+                  
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Mattresses</h3>
+                        <ul>
+                            <li>All Mattresses</li>
+                            <li>King Size Mattress</li>
+                            <li>Queen Size Mattress</li>
+                            <li>Single Bed Mattress</li>
+                            <li>Mattress By Range</li>
+                            <li>Mattress By Firmness</li>
+                            <li>Pillows</li>
+                            <li>Mattress by Brand</li>
+                            <li>Mattress By Material</li>
+                            <li>Double Bed Mattress</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Dining</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Dining Tables & Chairs</h3>
+                        <ul>
+                            <li>6 Seater Dining Table Sets</li>
+                            <li>4 Seater Dining Table Sets</li>
+                            <li>All 2 & 3 Seater Dining Table Sets</li>
+                            <li>All 8 Seater Dining Table Sets</li>
+                            <li>All Dining Table Sets</li>
+                            <li>Dining Tables</li>
+                            <li>Dining Chairs</li>
+                            <li>Dining Benches</li>
+                            <li>Folding Dining Table Sets</li>
+                            <li>Chair Pads</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Storage & Bar Furniture</h3>
+                        <ul>
+                            <li>Crockery Units</li>
+                            <li>Kitchen Cabinets & Racks</li>
+                            <li>Bar Stools</li>
+                            <li>Bar Cabinets</li>
+                            <li>Modular Kitchen</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Storage</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3> Living Storage</h3>
+                        <ul>
+                            <li>Shoe Racks</li>
+                            <li>Bookshelves</li>
+                            <li>Showcases</li>
+                            <li>Prayer Units</li>
+                            <li>TV Units</li>
+                            <li>Wall Shelves</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Bedroom Storage</h3>
+                        <ul>
+                            <li>Cupboards</li>
+                            <li> Storage Chests</li>
+                            <li>Modular Wardrobes</li>
+                            <li>Bedside Tables</li>
+                            <li>Chest of Drawers</li>
+                            <li>Dressers & Mirrors</li>
+                          
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Dining Storage</h3>
+                        <ul>
+                            <li>Crockery Units</li>
+                            <li>Kitchen Cabinets & Racks</li>
+                            <li>Bar Cabinets</li>
+                            <li>Modular-Kitchen</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Kids Storage</h3>
+                        <ul>
+                            <li>Kids Bedside Tables</li>
+                            <li>Kids Bookshelves</li>
+                            <li>Kids Storage Cabinets</li>
+                            <li>Kids Chest of Drawers</li>
+                            <li>Kids Wardrobes</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Study</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3> Study Tables</h3>
+                        <ul>
+                            <li>Computer Tables</li>
+                            <li>Office Tables</li>
+                            <li>Study Tables</li>
+                            <li>Solid Wood Study Tables</li>
+                            <li>Laptop Tables</li>
+                            <li>Study Sets</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Study Chairs</h3>
+                        <ul>
+                            <li>Study Chairs</li>
+                            <li>Office Chairs</li>
+                            <li>Ergonomic Study Chairs</li>
+                            <li> Accent Study Chairs</li>
+                            <li>Gaming Chairs</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Storage</h3>
+                        <ul>
+                            <li>Bookshelves</li>
+                            <li>Wall Shelves</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Decor</h3>
+                        <ul><li> Study Lamps  </li></ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Lighting & Outdoor</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Lighting</h3>
+                        <ul>
+                            <li>Floor Lamps</li>
+                            <li>Table Lamps</li>
+                            <li>Study Lamps</li>
+                            <li>Wall Lights</li>
+                            <li>Ceiling Lights</li>
+                            <li>Outdoor Lights</li>
+                            <li>Chandeliers</li>
+                            <li>Festive Lights</li>
+                            <li>Lamp Shades</li>
+                
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Carpets & Rugs</h3>
+                        <ul>
+                            <li>Carpets</li>
+                            <li>Dhurries</li>
+                            <li>Doormats</li>
+                            <li>Runners</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Home Linen</h3>
+                        <ul>
+                            <li>Bedsheets</li>
+                            <li>Quilts</li>
+                            <li>Bedroom Linen</li>
+                            <li>Cushions & Throws</li>
+                            <li>Curtains</li>
+                            <li>Table Furnishing </li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Wall Decor</h3>
+                        <ul>
+                            <li>Mirrors</li>
+                            <li>Wall Art</li>
+                            <li>Wall Accent</li>
+                            <li>Wall Plates</li>
+                            <li>Clocks</li>
+                            <li>Photo Frames</li>
+                            <li> Decals & Wall Stickers</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>Home Decor</h3>
+                        <ul>
+                            <li>Showpieces</li>
+                            <li>Vases</li>
+                            <li>Artificial Plants</li>
+                            <li>Artificial Flowers</li>
+                            <li>Planters </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Outdoor</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Balcony & Outdoor</h3>
+                        <ul>
+                            <li>Balcony Chairs</li>
+                            <li>Balcony Sets</li>
+                            <li>Swing Chairs</li>
+                            <li>Outdoor Tables</li>
+                            <li>Hammocks</li>
+                            <li>Plastic Chairs</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Interior</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>Urban Interiors</h3>
+                        <ul>
+                            <li>Full Home Interiors</li>
+                            <li>Modular Kitchens</li>
+                            <li>Modular Wardrobes</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a herf="#"></a>Trending</a>
+                <div class="megamenu">
+                    <div class="megamenu_items">
+                        <h3>House of Urban Ladder</h3>
+                        <ul><li>Simplywud - Affordable Furniture</li>
+                        <li>LazeON</li>
+                        <li>UL Create</li>
+                        <li>Aara Craft</li>
+                        <li>Gypsy Trunk</li></ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3> New Arrivals</h3>
+                        <ul>
+                           <li>
+                            UL Picks</li>
+                           <li>Living Room</li>
+                           <li>Bedroom</li>
+                           <li>Dining Room</li>
+                           <li>Storage</li>
+                           <li>Home Decor</li>
+                           <li>All New Arrivals</li>
+                        </ul>
+                    </div>
+                    <div class="megamenu_items">
+                        <h3>All Furniture</h3>
+                        <ul>
+                            <li>Living Room Furniture</li>
+                            <li>Bedroom Furniture</li>
+                            <li>Dining Room Furniture</li>
+                            <li> Study Room Furniture</li>
+                            <li>Outdoor Furniture</li>
+                            <li>Home Decor </li>
+                        </ul>
+                    </div>
+                
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+
 
 </body>
 
