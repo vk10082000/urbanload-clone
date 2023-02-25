@@ -144,7 +144,7 @@
         padding-top: 12px;
     }
 
-    .nav_3 ul:nth-child(3) {
+    .nav_3>ul:nth-child(3) {
         margin: 9px;
         margin-top: 19px;
     }
@@ -185,30 +185,30 @@
         opacity: 0;
         margin-top: 0px;
         visibility: hidden;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+        background-color:white;
+        box-shadow: rgba(254, 254, 254, 0.08) 0px 4px 12px;
        
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 10px;
         box-sizing: border-box;
     }
-    .nav_4>ul>li:hover .megamenu{
+    .nav_4>ul>li:hover>.megamenu{
         opacity: 1;
         top: 100%;
         visibility: visible;
 
     }
-    .megamenu_items ul li{
+    .megamenu_items>ul>li{
         list-style: none;
         padding: 5px 0px;
         
     }
-    .megamenu_items h3{
+    .megamenu_items>h3{
         font-size: 16px;
     padding-left: 41px;
     }
-    .megamenu_items h3:hover{
+    .megamenu_items>h3:hover{
         color: red;
         cursor: pointer;
         text-decoration: underline;
@@ -218,21 +218,32 @@
         cursor: pointer;
         text-decoration: underline;
     }
-    .megamenu_items ul li{
+    .megamenu_items>ul>li{
         font-size: 13px;
     }
     /* home page css ************************************************************************ */
      
-.slide-frame{
+    /* .carousel-cell{
+        width:100%;
+        height: 520px; 
+        margin-right:0px;
+        background-size: cover;
+        background-position: center center;
+      } */
+/* .carousel .carousel-cell{
     width: 100%;
     height: 500px;
-    overflow: hidden;
+   overflow: hidden;
  
 }
+.carousel{
+    margin-top: 20px;
+    height: 520px;
+    width: 100%;
+} */
 
-
-/*  slide animesations******* */
- 
+ /* slide animesations******* */ 
+  
  /* @-webkit-keyframes slide_animation{
     0% {left: 0px;}
     10% {left: 0px;}
@@ -269,7 +280,7 @@
 .image-container>img{
     width: 100%;
     height: 450px;
-}   */
+}     */
 
 
 /* home middle_part****************** */
@@ -309,3 +320,5 @@ h1{
     text-align: center;
     text-transform: capitalize;
 } 
+
+
