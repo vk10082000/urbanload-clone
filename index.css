@@ -1,0 +1,311 @@
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    /* Nav 1 *********************************************************************************** */
+    h4 {
+        margin-top: 0px;
+        width: 100%;
+        height: 30px;
+        background-color: #ffd166;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-family: "Mr Eaves XL Modern", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+
+    }
+
+    /* Nav 2 **************************************************************************************** */
+    .nav_2 {
+
+        /* background-color: blueviolet; */
+        width: 100%;
+        margin: auto;
+        height: 22px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        padding-bottom: 12px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+
+    }
+
+    .nav_2 ul {
+        padding: 0%;
+        margin: 0%;
+        overflow: auto;
+        padding: 10px 10px;
+
+    }
+
+    .nav_2 a {
+        text-decoration: none;
+
+    }
+
+    .nav_2 li a:hover {
+        color: red;
+    }
+
+    .nav_2 li {
+        float: left;
+        padding: 12px 13px;
+        list-style: none;
+    }
+
+    .nav_2 li img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    .nav_2 li img:hover {
+        color: red;
+    }
+
+    .nav_2 a {
+        font-size: 14px;
+    }
+
+    /* Nav 3 *************************************************************************************** */
+    .nav_3 {
+        width: 100%;
+        margin: auto;
+        height: 70px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        padding-bottom: 12px;
+        padding-left: 10%;
+        padding-right: 10%;
+
+
+
+    }
+
+    .nav_3 li img {
+        width: 28px;
+        height: 28px;
+
+    }
+
+    .nav_3 a {
+        text-decoration: none;
+    }
+
+    .nav_3 li {
+        float: left;
+        padding: 12px 13px;
+        list-style: none;
+    }
+
+    #logo {
+        width: 75px;
+        height: 68px;
+        margin-top: 11px;
+        margin-left: -35px;
+    }
+
+    ul>div {
+        border: 1px solid black;
+        width: 619px;
+        height: 40px;
+        margin: -33px;
+        margin-top: -12px;
+        border-radius: 5px;
+    }
+
+    .icon_search {
+        font-size: 25px;
+
+    }
+
+    .search>input {
+        background: transparent;
+        border: 0px;
+        outline: 0px;
+        width: 580px;
+        font-size: 15px;
+        padding-left: 9px;
+        padding-top: 12px;
+    }
+
+    .nav_3 ul:nth-child(3) {
+        margin: 9px;
+        margin-top: 19px;
+    }
+
+    /* nav 4 ************************************************************************ */
+    .nav_4 {
+        width: 100%;
+        height: 45px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+    }
+
+
+    /* bgafjkhgfloihj************************************************************ */
+
+    .nav_4>ul {
+        width: 86%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-left: 69px;
+        position: relative;
+    }
+
+    .nav_4>ul>li {
+        padding: 15px 9px;
+        list-style: none;
+    }
+
+    .nav_4>ul>li>a {
+        text-decoration: none;
+    }
+    .megamenu{
+        width: 86%;
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        opacity: 0;
+        margin-top: 0px;
+        visibility: hidden;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    .nav_4>ul>li:hover .megamenu{
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+
+    }
+    .megamenu_items ul li{
+        list-style: none;
+        padding: 5px 0px;
+        
+    }
+    .megamenu_items h3{
+        font-size: 16px;
+    padding-left: 41px;
+    }
+    .megamenu_items h3:hover{
+        color: red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .megamenu_items ul li:hover{
+        color: red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .megamenu_items ul li{
+        font-size: 13px;
+    }
+    /* home page css ************************************************************************ */
+     
+.slide-frame{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+ 
+}
+
+
+/*  slide animesations******* */
+ 
+ /* @-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+}
+
+.slide-block{
+    width: 3600px;
+    height: 500px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name:slide_animation ;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:alternate-reverse;
+    -webkit-animation-play-state: running;
+
+}
+.image-container{
+    width: 1200px;
+   height: 500px;
+    position: relative;
+    float:left;
+    
+}
+.image-container>img{
+    width: 100%;
+    height: 450px;
+}   */
+
+
+/* home middle_part****************** */
+.middle_box{
+    width: 80%;
+    margin: auto;
+}
+.middle{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-auto-rows: 170px;
+    gap: 20px;
+}
+.middle>div{
+    text-align: center;
+    
+}
+.middle>div>h3{
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+.middle div>img{
+    width: 70%;
+}
+h1{
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px 0 10px 0;
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color: #2F4858;
+    text-align: center;
+    text-transform: capitalize;
+} 

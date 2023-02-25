@@ -8,228 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
-<style>
-    body {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    *{
-        box-sizing: border-box;
-    }
-
-    /* Nav 1 *********************************************************************************** */
-    h4 {
-        margin-top: 0px;
-        width: 100%;
-        height: 30px;
-        background-color: #ffd166;
-        text-align: center;
-        padding-top: 7px;
-        padding-bottom: 7px;
-        font-family: "Mr Eaves XL Modern", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 13px;
-
-    }
-
-    /* Nav 2 **************************************************************************************** */
-    .nav_2 {
-
-        /* background-color: blueviolet; */
-        width: 100%;
-        margin: auto;
-        height: 22px;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-        padding-bottom: 12px;
-        padding-left: 10%;
-        padding-right: 10%;
-
-
-    }
-
-    .nav_2 ul {
-        padding: 0%;
-        margin: 0%;
-        overflow: auto;
-        padding: 10px 10px;
-
-    }
-
-    .nav_2 a {
-        text-decoration: none;
-
-    }
-
-    .nav_2 li a:hover {
-        color: red;
-    }
-
-    .nav_2 li {
-        float: left;
-        padding: 12px 13px;
-        list-style: none;
-    }
-
-    .nav_2 li img {
-        width: 28px;
-        height: 28px;
-
-    }
-
-    .nav_2 li img:hover {
-        color: red;
-    }
-
-    .nav_2 a {
-        font-size: 14px;
-    }
-
-    /* Nav 3 *************************************************************************************** */
-    .nav_3 {
-        width: 100%;
-        margin: auto;
-        height: 70px;
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-        padding-bottom: 12px;
-        padding-left: 10%;
-        padding-right: 10%;
-
-
-
-    }
-
-    .nav_3 li img {
-        width: 28px;
-        height: 28px;
-
-    }
-
-    .nav_3 a {
-        text-decoration: none;
-    }
-
-    .nav_3 li {
-        float: left;
-        padding: 12px 13px;
-        list-style: none;
-    }
-
-    #logo {
-        width: 75px;
-        height: 68px;
-        margin-top: 11px;
-        margin-left: -35px;
-    }
-
-    ul>div {
-        border: 1px solid black;
-        width: 619px;
-        height: 40px;
-        margin: -33px;
-        margin-top: -12px;
-        border-radius: 5px;
-    }
-
-    .icon_search {
-        font-size: 25px;
-
-    }
-
-    .search>input {
-        background: transparent;
-        border: 0px;
-        outline: 0px;
-        width: 580px;
-        font-size: 15px;
-        padding-left: 9px;
-        padding-top: 12px;
-    }
-
-    .nav_3 ul:nth-child(3) {
-        margin: 9px;
-        margin-top: 19px;
-    }
-
-    /* nav 4 ************************************************************************ */
-    .nav_4 {
-        width: 100%;
-        height: 45px;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-
-    }
-
-
-    /* bgafjkhgfloihj************************************************************ */
-
-    .nav_4>ul {
-        width: 86%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        margin-left: 69px;
-        position: relative;
-    }
-
-    .nav_4>ul>li {
-        padding: 15px 9px;
-        list-style: none;
-    }
-
-    .nav_4>ul>li>a {
-        text-decoration: none;
-    }
-    .megamenu{
-        width: 86%;
-        position: absolute;
-        top: 100%;
-       left: 10%;
-        opacity: 0;
-        margin-top: 0px;
-        visibility: hidden;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-       
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 10px;
-        box-sizing: border-box;
-    }
-    .nav_4>ul>li:hover .megamenu{
-        opacity: 1;
-        top: 100%;
-        visibility: visible;
-
-    }
-    .megamenu_items ul li{
-        list-style: none;
-        padding: 5px 0px;
-        
-    }
-    .megamenu_items h3{
-        font-size: 16px;
-    padding-left: 41px;
-    }
-    .megamenu_items h3:hover{
-        color: red;
-        cursor: pointer;
-        text-decoration: underline;
-    }
-    .megamenu_items ul li:hover{
-        color: red;
-        cursor: pointer;
-        text-decoration: underline;
-    }
-    .megamenu_items ul li{
-        font-size: 13px;
-    }
-</style>
+<link rel="stylesheet" href="./index.css">
 
 <body>
     <!-- nav bar ************************************************************************************ -->
@@ -313,7 +92,7 @@
                             <li> Diwans</li>
                             <li>Loveseats</li>
                         </ul>
-                        
+
                     </div>
                     <div class="megamenu_items">
                         <h3>Recliners</h3>
@@ -325,7 +104,7 @@
                             <li>Fabric Recliners</li>
                             <li>Leatherette Recliners</li>
                             <li> Motorized Recliners</li>
-                            <li>Manual Recliners  </li>
+                            <li>Manual Recliners </li>
                         </ul>
                     </div>
                     <div class="megamenu_items">
@@ -381,18 +160,20 @@
                     </div>
                     <div class="megamenu_items">
                         <h3>Living Storage</h3>
-                        <ul><li>TV Units</li>
-                        <li>Bookshelves</li>
-                        <li>Shoe Racks</li>
-                        <li>Prayer Units</li>
-                        <li>Showcases</li>
-                        <li>Wall Shelves</li>
-                        <li>Entryway & Foyer</li>
-                        <li>Corner Storage</li>
-                        <li>Room Divider</li>
-                        <li>Living Room Sets</li></ul>
+                        <ul>
+                            <li>TV Units</li>
+                            <li>Bookshelves</li>
+                            <li>Shoe Racks</li>
+                            <li>Prayer Units</li>
+                            <li>Showcases</li>
+                            <li>Wall Shelves</li>
+                            <li>Entryway & Foyer</li>
+                            <li>Corner Storage</li>
+                            <li>Room Divider</li>
+                            <li>Living Room Sets</li>
+                        </ul>
                     </div>
-                 </div>
+                </div>
             </li>
             <li><a herf="#"></a>Bedroom & Mattresses</a>
                 <div class="megamenu">
@@ -410,7 +191,7 @@
                             <li>Upholstered Beds</li>
                             <li>Trundle Beds</li>
                         </ul>
-                  
+
                     </div>
                     <div class="megamenu_items">
                         <h3>Mattresses</h3>
@@ -480,7 +261,7 @@
                             <li>Bedside Tables</li>
                             <li>Chest of Drawers</li>
                             <li>Dressers & Mirrors</li>
-                          
+
                         </ul>
                     </div>
                     <div class="megamenu_items">
@@ -525,7 +306,7 @@
                             <li>Ergonomic Study Chairs</li>
                             <li> Accent Study Chairs</li>
                             <li>Gaming Chairs</li>
-                           
+
                         </ul>
                     </div>
                     <div class="megamenu_items">
@@ -537,7 +318,9 @@
                     </div>
                     <div class="megamenu_items">
                         <h3>Decor</h3>
-                        <ul><li> Study Lamps  </li></ul>
+                        <ul>
+                            <li> Study Lamps </li>
+                        </ul>
                     </div>
                 </div>
             </li>
@@ -555,7 +338,7 @@
                             <li>Chandeliers</li>
                             <li>Festive Lights</li>
                             <li>Lamp Shades</li>
-                
+
                         </ul>
                     </div>
                     <div class="megamenu_items">
@@ -633,23 +416,25 @@
                 <div class="megamenu">
                     <div class="megamenu_items">
                         <h3>House of Urban Ladder</h3>
-                        <ul><li>Simplywud - Affordable Furniture</li>
-                        <li>LazeON</li>
-                        <li>UL Create</li>
-                        <li>Aara Craft</li>
-                        <li>Gypsy Trunk</li></ul>
+                        <ul>
+                            <li>Simplywud - Affordable Furniture</li>
+                            <li>LazeON</li>
+                            <li>UL Create</li>
+                            <li>Aara Craft</li>
+                            <li>Gypsy Trunk</li>
+                        </ul>
                     </div>
                     <div class="megamenu_items">
                         <h3> New Arrivals</h3>
                         <ul>
-                           <li>
-                            UL Picks</li>
-                           <li>Living Room</li>
-                           <li>Bedroom</li>
-                           <li>Dining Room</li>
-                           <li>Storage</li>
-                           <li>Home Decor</li>
-                           <li>All New Arrivals</li>
+                            <li>
+                                UL Picks</li>
+                            <li>Living Room</li>
+                            <li>Bedroom</li>
+                            <li>Dining Room</li>
+                            <li>Storage</li>
+                            <li>Home Decor</li>
+                            <li>All New Arrivals</li>
                         </ul>
                     </div>
                     <div class="megamenu_items">
@@ -663,7 +448,7 @@
                             <li>Home Decor </li>
                         </ul>
                     </div>
-                
+
                 </div>
             </li>
 
@@ -671,10 +456,107 @@
 
     </div>
 
+    <!--  home page ***************************************************************************************** -->
+    <div class="slide-frame">
+        <div class="slide-block">
+            <!-- slide_1 -->
+            <div class="image-container">
+                <img src="https://www.ulcdn.net/media/Slideshow/CCS-Slideshow.jpg?1677261646" alt="">
+            </div>
+            <div class="image-container">
+                <img src="https://www.ulcdn.net/media/Slideshow/UI-Feb-slideshow.jpg?1676622712" alt="">
+            </div>
+            <!-- slide_2 -->
+            <div class="image-container">
+                <img src="https://www.ulcdn.net/media/Slideshow/Beds-CCS.jpg?1677216442" alt="">
+            </div>
+            <!-- slide_3 -->
+            <div class="image-container">
+                <img src="https://www.ulcdn.net/media/Slideshow/Dining-CCS.jpg?1677216448" alt="">
+            </div>
+            <!-- slide_4 -->
+            <div class="image-container">
+                <img src="https://www.ulcdn.net/media/Slideshow/Shoe-racks-CCS.jpg?1677216454" alt="">
+            </div>
+            <!-- slide_5 -->
+            <div class="image-container">
+                <img src="https://www.ulcdn.net/media/Slideshow/UI-Feb-slideshow.jpg?1676622712" alt="">
+            </div>
+            
+        </div>
+
+    </div>
 
 
+    <!-- home middle part 2 -->
+<h1>
+    Explore Our Furniture Range
+</h1>
+<div class="middle_box">
+<div class="middle">
+    <div>
+        <img src="https://www.ulcdn.net/media/web-home-popular-categories/deal_zone_icon-15_Desktop.svg?1665149548" alt="">
+        <h3>Deal Zone</h3>
+    </div>
+    <div>
+        <img src="./imges/Beds.png" alt="">
+       <h3>Beds</h3>
+    </div>
+    <div>
+        <img src="./imges/Bookshelves.png"   alt="">
+       <h3>Bookshelves</h3>
+    </div>
+    <div>
+        <img src="./imges/coffee-table.png" alt="">
+       <h3>coffee-table</h3>
+    </div>
+    <div>
+        <img src="./imges/Dining.png" alt="">
+       <h3>Dining</h3>
+    </div>
+    <div>
+        <img src="./imges/Seating.png" alt="">
+       <h3>Seating</h3>
+    </div>
+    <div>
+        <img src="./imges/Shoe Racks.png" alt="">
+       <h3>Shoe Racks</h3>
+    </div>
+    <div>
+        <img src="./imges/Sofas.png" alt="">
+       <h3>Sofas</h3>
+    </div>
+    <div>
+        <img src="./imges/Study.png" alt="">
+       <h3>Study</h3>
+    </div>
+    <div>
+        <img src="./imges/Tv Units.png" alt="">
+       <h3>TV Units</h3>
+    </div>
+    <div>
+        <img src="./imges/Best Sellers.png" alt="">
+       <h3>Best Sellers</h3>
+    </div>
+    <div>
+        <img src="./imges/recliner.png" alt="">
+       <h3>Recliners</h3>
+    </div>
 
+    <div>
+        <img src="https://www.ulcdn.net/media/web-home-popular-categories/UL_CATEGORY_ICONS-Lighting.svg?1665149591" alt="">
+        <h3>Lighting</h3>
+    </div>
+    <div>
+        <img src="https://www.ulcdn.net/media/Web-home-popular-categories/store_icon.png?1535694121" alt="">
+        <h3>Stores</h3>
+    </div>
+
+
+</div>
+</div>
 
 </body>
+<script src="./index.js"></script>
 
 </html>
