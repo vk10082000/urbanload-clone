@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart_Page</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Nav 1 *********************************************************************************** */
+
+        .nav_1>h4 {
+
+            margin-top: 0px;
+            width: 100%;
+            height: 35px;
+            background-color: #ffd166;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 7px;
+            font-family: "Mr Eaves XL Modern", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+
+        }
+
+        /* footer CSS ************************************************ */
+
+
+        #bottom_part {
+            width: 80%;
+            margin: auto;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-around;
+            color: rgb(0, 0, 0);
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+        }
+
+        .grey {
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        #bottom_part h3:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #bottom_part p:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+
+        /* cart nav bar****************************************** */
+
+        .cart-navbar {
+            height: 80px;
+            width: 100%;
+            margin-top: -18px;
+            padding-left: 10%;
+            padding-right: 10%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: rgb(47, 86, 110);
+            margin-bottom: 20px;
+        }
+
+        .cart-navbar a>img {
+            height: 75px;
+
+        }
+
+        .cart-navbar a {
+            font-size: 20px;
+            color: aliceblue;
+            text-decoration: none;
+
+        }
+
+        .cart-navbar a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+
+        /* cartbody css ********************************** */
+        #container {
+
+            width: 80%;
+            margin: auto;
+            display: grid;
+            gap: 10px;
+        }
+
+        #container>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        }
+
+        #container>div>img {
+            height: 100px;
+            width: 200px;
+        }
+
+        #container>div>div {
+            display: flex;
+            width: 100px;
+            justify-content: space-around;
+            align-items: center;
+            height: 35px;
+            font-size: 16px;
+
+
+        }
+
+        #container>div>div>h4 {
+            font-size: 20px;
+
+        }
+
+        #imgdiv {
+            height: 100px;
+
+        }
+
+        #container>div>button {
+            margin-left: 5px;
+            background-color: #ff3e09;
+            height: 30px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        #Chectout {
+            width: 20%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+            padding: 10px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+
+        #Chectout>button {
+            display: block;
+            margin: auto;
+            height: 40px;
+            width: 150px;
+            background-color: #f5a505;
+            border: none;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="nav_1">
+        <h4> Spring into Sale | Up to 60% off | Now Live | <span style="color: red; cursor: pointer;">Click to
+                shop!</span></h4>
+    </div>
+
+
+    <div class="cart-navbar">
+
+        <a href="./Index.html">
+            <img src="./Orange White Simple Furniture Logo.png" alt="">
+        </a>
+        <a href="./Index.html">Home</a>
+        <a href="./Login.html">Login</a>
+        <a href="./Signup.html">Sign up</a>
+        <a href="./cart.html">Cart</a>
+    </div>
+
+    <!-- cart data ****************************************** -->
+
+    <div id="container">
+
+
+    </div>
+
+
+    <div id="Chectout">
+        <h2>Total Amount:- <span>0</span></h2>
+        <button>Place Order</button>
+
+    </div>
+
+
+    <!-- footer ************************************************************************ -->
+
+
+
+    <div id="bottom_part">
+        <div>
+            <h3 class="grey">ABOUT</h3>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p> Careers</p>
+            <p> Fashionkart Stories</p>
+            <p>Press</p>
+            <p>Fashionkart Wholesale</p>
+            <p>Corporate Information</p>
+        </div>
+        <div>
+            <h3 class="grey">HELP</h3>
+            <p>Payments</p>
+            <p>Shippin</p>
+            <p>Cancellation & Returns</p>
+            <p>FAQ</p>
+            <p>Report Infringement</p>
+        </div>
+        <div>
+            <h3 class="grey">POLICY</h3>
+            <p>Return Policy</p>
+            <p>Terms of use</p>
+            <p>Security</p>
+            <p>Privacy</p>
+            <p>Sitemap</p>
+            <p>EPR Compliance</p>
+        </div>
+        <div>
+            <h3 class="grey">SOCIAL</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Youtube</p>
+        </div>
+        <div>
+            <h3 class="grey">MAIL US</h3>
+            <p>Fashionkart Internet Private Limited,<br> Buildings Alyssa, Begonia & <br>Clove Embassy Tech
+                Village,<br>Outer Ring Road,<br> Devarabeesanahalli Village,<br>Bengaluru, 560103,<br>Karnataka, India
+            </p>
+        </div>
+        <div>
+            <h3 class="grey">Registered Office Address:</h3>
+            <p>Fashionkart Internet Private Limited,<br>Buildings Alyssa, Begonia & <br>Clove Embassy Tech Village,
+                <br>Outer Ring Road, Devarabeesanahalli Village, <br> Bengaluru, 560103, <br> Karnataka, India <br> CIN
+                : U51109KA2012PTC066107 <br>Telephone: 044-45614700
+            </p>
+        </div>
+    </div>
+
+</body>
+<script>
+    let cartdata = JSON.parse(localStorage.getItem("cart"))
+    //console.log(cartdata)
+    let container = document.getElementById("container")
+    let total = document.querySelector("#Chectout span")
+    display(cartdata)
+
+    function display(data) {
+        container.innerHTML = null
+        data.forEach(element => {
+            let card = document.createElement("div")
+            let img = document.createElement("img")
+            let name = document.createElement("h3")
+            let price = document.createElement("h3")
+            let Category = document.createElement("p")
+            let newdiv = document.createElement("div")
+            let btn = document.createElement("button")
+            let quantity = document.createElement("h4")
+            let increbtn = document.createElement("button")
+            let decrebtn = document.createElement("button")
+
+            img.src = element.image;
+            name.textContent = element.name;
+            price.textContent = `₹${element.price}`;
+            Category.textContent = element.Category;
+            btn.textContent = "Remove"
+
+            quantity.innerText = element.quantity
+
+
+            increbtn.textContent = "+"
+            decrebtn.textContent = "-"
+
+            btn.addEventListener("click", () => {
+                data = data.filter((el) => {
+                    return el.id != element.id
+                })
+                localStorage.setItem("cart", JSON.stringify(cartdata))
+                display(data)
+            })
+
+            let count = 1
+            increbtn.addEventListener("click", () => {
+                count++
+                if (count < 1) {
+                    count = 1
+                }
+                quantity.textContent = count
+            })
+            decrebtn.addEventListener("click", () => {
+                count--
+                if (count < 1) {
+                    count = 1
+                }
+                quantity.textContent = count
+            })
+            
+            newdiv.append(increbtn, quantity, decrebtn)
+            card.append(img, name, price, newdiv, btn)
+            container.append(card)
+
+        })
+
+    }
+   
+        let sum=0;
+        cartdata.forEach(element => {
+            sum+= element.price
+        });
+        total.textContent=sum
+</script>
+
+</html>

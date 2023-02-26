@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Nav 1 *********************************************************************************** */
+        h4 {
+            margin-top: 0px;
+            width: 100%;
+            height: 30px;
+            background-color: #ffd166;
+            text-align: center;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            font-family: "Mr Eaves XL Modern", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+
+        }
+
+        /* Nav 2 **************************************************************************************** */
+        .nav_2 {
+
+            /* background-color: blueviolet; */
+            width: 100%;
+            margin: auto;
+            height: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            padding-bottom: 12px;
+            padding-left: 10%;
+            padding-right: 10%;
+
+
+        }
+
+        .nav_2>ul {
+            padding: 0%;
+            margin: 0%;
+            overflow: auto;
+            padding: 10px 10px;
+
+        }
+
+        .nav_2 a {
+            text-decoration: none;
+
+        }
+
+        .nav_2>li a:hover {
+            color: red;
+        }
+
+        .nav_2 li {
+            float: left;
+            padding: 12px 13px;
+            list-style: none;
+        }
+
+        .nav_2 li img {
+            width: 28px;
+            height: 28px;
+
+        }
+
+        .nav_2 li img:hover {
+            color: red;
+        }
+
+        .nav_2 a {
+            font-size: 14px;
+        }
+
+        /* Nav 3 *************************************************************************************** */
+        .nav_3 {
+            width: 100%;
+            margin: auto;
+            height: 70px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            padding-bottom: 12px;
+            padding-left: 10%;
+            padding-right: 10%;
+
+
+
+        }
+
+        .nav_3 li img {
+            width: 28px;
+            height: 28px;
+
+        }
+
+        .nav_3 a {
+            text-decoration: none;
+        }
+
+        .nav_3 li {
+            float: left;
+            padding: 12px 13px;
+            list-style: none;
+        }
+
+        #logo {
+            width: 75px;
+            height: 68px;
+            margin-top: 11px;
+            margin-left: -35px;
+        }
+
+        ul>div {
+            border: 1px solid black;
+            width: 619px;
+            height: 40px;
+            margin: -33px;
+            margin-top: -12px;
+            border-radius: 5px;
+        }
+
+        .icon_search {
+            font-size: 25px;
+
+        }
+
+        .search>input {
+            background: transparent;
+            border: 0px;
+            outline: 0px;
+            width: 580px;
+            font-size: 15px;
+            padding-left: 9px;
+            padding-top: 12px;
+        }
+
+        .nav_3>ul:nth-child(3) {
+            margin: 9px;
+            margin-top: 19px;
+        }
+
+        /* products data******************************************* */
+        .main {
+            display: flex;
+            
+        }
+        .selector{
+            
+            padding: 6x;
+            
+        }
+        #filter{
+           
+            text-align: center;
+           margin-top: 44px;
+            font-size: 22px;
+        }
+        #product-container {
+
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 400px;
+            gap: 10px;
+        }
+
+        #product-container>div {
+            padding: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        #product-container>div>img {
+            width: 100%;
+            height: 180px;
+        }
+
+        #product-container>div>button {
+            display: block;
+            margin: auto;
+            border-radius: 2px;
+            border: none;
+            padding: 4px 8px;
+            color: white;
+            background-color: rgb(247, 168, 21);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4> Spring into Sale | Up to 60% off | Now Live | <span style="color: red; cursor: pointer;">Click to
+                shop!</span></h4>
+    </div>
+    <div class="nav_2">
+        <ul>
+            <li> <a href=""><img style="cursor: pointer;" src="https://img.icons8.com/ios/2x/help.png" alt=""> </a>
+            </li>
+            <li style="padding-top: 17px;margin-left: -20px;"><a href="" style=" cursor: pointer;">Help</a></li>
+            <li> <a href=""><img
+                        src="https://img.icons8.com/external-photo3ideastudio-solid-photo3ideastudio/2x/external-order-tracking-internet-of-things-photo3ideastudio-solid-photo3ideastudio.png"
+                        alt=""> </a> </li>
+            <li style="padding-top: 17px; margin-left: -20px; "><a href="">Track Order</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Stores</a></li>
+            <li><a href="">Bulk-Orders</a></li>
+            <li><a href="">Gift Cards</a></li>
+            <li><a href="">UL Services</a></li>
+        </ul>
+    </div>
+    <div class="nav_3">
+        <ul>
+            <li>
+                <a href="./Index.html"> <img id="logo" src="./Copy of Orange White Simple Furniture Logo.png" alt=""></a>
+            </li>
+        </ul>
+        <ul>
+            <div class="search">
+
+                <input type="text" name="Search" placeholder="Search">
+                <a href=""><i class="fa fa-search icon_search "></i></a>
+            </div>
+        </ul>
+        <ul>
+            <li><a href=""> <img
+                        src="https://img.icons8.com/external-photo3ideastudio-solid-photo3ideastudio/2x/external-order-tracking-internet-of-things-photo3ideastudio-solid-photo3ideastudio.png"
+                        alt=""></a></li>
+            <li><a href=""> <img src="https://img.icons8.com/fluency/512/user-male-circle.png" alt=""></a></li>
+            <li><a href=""> <img src="https://img.icons8.com/pastel-glyph/2x/hearts.png" alt=""></a></li>
+            <li><a href="./cart.html"> <img src="https://img.icons8.com/pastel-glyph/2x/shopping-cart.png" alt=""></a></li>
+
+        </ul>
+
+    </div>
+
+    <div class="main">
+        <div class="selector">
+            <select id="filter">
+                <option value="">Filter By Category</option>
+                <option value="sofa">Sofa</option>
+                <option value="TV Units">TV Units</option>
+                <option value="Chair">Chairs</option>
+                <option value="Study-table">Study-table</option>
+                <option value="Bed">Bed</option>
+                <option value="Lights">Ligths & Study Lamps</option>
+
+
+            </select>
+        </div>
+
+        <div id="product-container">
+
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let container = document.getElementById("product-container")
+    let filter = document.getElementById("filter")
+    let cartdata=  JSON.parse(localStorage.getItem("cart")) || []
+
+    let api = "./projectdata.js"
+
+    fetch(api)
+        .then((response) => {
+            return response.json();
+        })
+        .then((res) => {
+            let data = res
+            filter.addEventListener("change", () => {
+                if (filter.value == "") {
+                    display(data)
+                }
+                else {
+                    let filterdata = data.filter((el) => {
+                        if (filter.value === el.Category) {
+                            return true
+                        } else {
+                            return false
+                        }
+                    })
+                    display(filterdata)
+                    //console.log(filterdata)
+                }
+            })
+            display(data)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+
+    function display(data) {
+        container.innerHTML = null
+        data.forEach(element => {
+            let card = document.createElement("div")
+            let img = document.createElement("img")
+            let name = document.createElement("h3")
+            let price = document.createElement("h3")
+            let Category = document.createElement("p")
+            let btn = document.createElement("button")
+
+            img.src = element.image;
+            name.textContent = element.name;
+            price.textContent = `₹${element.price}`;
+            Category.textContent = element.Category;
+            btn.textContent = "Add To Cart"
+
+
+            btn.addEventListener("click",()=>{
+        
+        if(duplicate(element) ){
+         //console.log("fhg")
+         alert(" Product already added to cart")
+        }else{
+         cartdata.push({...element,quantity:1})
+         alert(" Product is added to cart")
+
+         localStorage.setItem("cart",JSON.stringify(cartdata))
+
+        }
+      
+        })
+
+            card.append(img, name, price, Category, btn)
+            container.append(card)
+        });
+
+    }
+
+
+    function duplicate(el){
+     for(let i=0;i<cartdata.length;i++) {
+       
+        if(el.id == cartdata[i].id){
+          return true
+        }
+         
+        
+      }
+      return false
+    }
+</script>
+
+</html>
