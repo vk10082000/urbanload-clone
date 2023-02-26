@@ -117,19 +117,15 @@
             password: password.value
 
         }
+        alert("Sign Up Successfull")
         logindata.push(obj)
 
-    
-       
-        
-        if (logindata.length == 0) {
-            localStorage.setItem("data", JSON.stringify(logindata))
-        }else{
-           
-        }
+        localStorage.setItem("data", JSON.stringify(logindata))
+
+
     })
 
-   
+
 
 </script>
 
