@@ -10,7 +10,9 @@
     }
 
     /* Nav 1 *********************************************************************************** */
+   
     h4 {
+       
         margin-top: 0px;
         width: 100%;
         height: 30px;
@@ -154,23 +156,35 @@
         width: 100%;
         height: 45px;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        background-color: rgb(253, 253, 253);
+        margin-bottom: 5px;
+        padding-bottom: 10px;
 
     }
 
 
     /* bgafjkhgfloihj************************************************************ */
-
+    .nav_4{
+        position: absolute;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
     .nav_4>ul {
-        width: 86%;
-        margin: auto;
+        width: 100%;
+       
         display: flex;
         justify-content: center;
-        margin-left: 69px;
-        position: relative;
+       
+       position: relative;
+       
+        background-color: rgb(253, 253, 253);
     }
 
     .nav_4>ul>li {
-        padding: 15px 9px;
+        padding: 5px 10px;
         list-style: none;
     }
 
@@ -178,7 +192,7 @@
         text-decoration: none;
     }
     .megamenu{
-        width: 86%;
+        width: 100%;
         position: absolute;
         top: 100%;
         left: 10%;
@@ -204,9 +218,18 @@
         padding: 5px 0px;
         
     }
-    .megamenu_items>h3{
+    .megamenu_items h3{
         font-size: 16px;
     padding-left: 41px;
+    cursor: pointer;
+    }
+
+    #navbar ul li a{
+        cursor: pointer;
+    }
+    #navbar ul li a:hover{
+        color: red;
+        text-decoration:underline ;
     }
     .megamenu_items>h3:hover{
         color: red;
@@ -222,65 +245,17 @@
         font-size: 13px;
     }
     /* home page css ************************************************************************ */
-     
-    /* .carousel-cell{
-        width:100%;
-        height: 520px; 
-        margin-right:0px;
-        background-size: cover;
-        background-position: center center;
-      } */
-/* .carousel .carousel-cell{
-    width: 100%;
-    height: 500px;
-   overflow: hidden;
- 
-}
-.carousel{
-    margin-top: 20px;
-    height: 520px;
-    width: 100%;
-} */
 
- /* slide animesations******* */ 
-  
- /* @-webkit-keyframes slide_animation{
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 1200px;}
-    30% {left: 1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left: 0px;}
-}
+ .slide-container{
+margin-top: 20px;
+width: 100%;
 
-.slide-block{
-    width: 3600px;
-    height: 500px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name:slide_animation ;
-    -webkit-animation-duration: 33s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction:alternate-reverse;
-    -webkit-animation-play-state: running;
+ }
+ .slide-container img{
+  height: 500px;
+  width: 100%;
+ }
 
-}
-.image-container{
-    width: 1200px;
-   height: 500px;
-    position: relative;
-    float:left;
-    
-}
-.image-container>img{
-    width: 100%;
-    height: 450px;
-}     */
 
 
 /* home middle_part****************** */
@@ -322,3 +297,74 @@ h1{
 } 
 
 
+/* part 3*********************************************************** */
+
+.homepage_part3{
+    width: 80%;
+    margin: auto;
+   
+    
+}
+  .homepage_part3>.sub-div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+   
+    gap: 10px;
+    row-gap: 20px;
+  }
+  .homepage_part3>.sub-div>div>img{
+width: 100%;
+  }
+  .homepage_part3>.sub-div>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+  /* footer ************************************************** */
+
+
+  .footer{
+    width: 100%;
+    margin-top: 50px;
+   
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    height: 300px;
+  }
+
+/* 
+  a{
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    padding: 16px 0 8px 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+  } */
+
+.main-footer{
+    width: 80%;
+    margin: auto;
+}
+  .main-footer>.sub{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+  }
+  .main-footer>.sub>div li{
+    list-style: none;
+    margin-left: -30px;
+    cursor: pointer;
+
+  }
+.main-footer>.sub>div li:hover{
+    color: red;
+    
+}
+.main-footer>.sub>div>h3{
+    
+
+    text-decoration-line: underline;
+    text-decoration-color: rgb(246, 119, 119);
+    
+}
